@@ -1,0 +1,11 @@
+quarkus:
+  log:
+    category:
+      io.quarkus:
+        level: INFO
+      io.hawt:
+        level: WARN
+      io.undertow:
+        level: WARN
+  hawtio:
+    authenticationEnabled: false

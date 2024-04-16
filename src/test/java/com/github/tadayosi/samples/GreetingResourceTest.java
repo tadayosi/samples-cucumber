@@ -10,11 +10,13 @@ import static org.hamcrest.CoreMatchers.is;
 class GreetingResourceTest {
     @Test
     void testHelloEndpoint() {
+        // @formatter:off
         given()
-          .when().get("/hello")
-          .then()
-             .statusCode(200)
-             .body(is("Hello from Quarkus REST"));
+            .when().get("/hello")
+            .then()
+                .statusCode(200)
+                .body(is("Hello Quarkus!"));
+        // @formatter:on
     }
 
 }
